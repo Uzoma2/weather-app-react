@@ -70,7 +70,7 @@ export default function Weather() {
           </a>
         </p>
         <a
-          href="https://github.com/Uzoma2/Weather-App"
+          href="https://github.com/Uzoma2/weather-app-react"
           className="footerlink"
           target="_blank"
           rel="noreferrer"
