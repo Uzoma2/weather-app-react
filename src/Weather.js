@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import SmartDate from "./smartDate.js";
 
 export default function Weather() {
   const [weather, setWeather] = useState({ loaded: false });
@@ -9,6 +10,7 @@ export default function Weather() {
       loaded: true,
       city: response.data.name,
       temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -47,7 +49,9 @@ export default function Weather() {
           <div className="temp-today-row">
             <div className="temp-today">
               <h1 className="current-city">{weather.city}</h1>
-              <h3 className="current-day-time">4:30am</h3>
+              <h3 className="current-day-time">
+                <SmartDate date={weather.date} />
+              </h3>
               <h3 className="weather-description">{weather.description}</h3>
               <div className="weather-icon-link-wrap">
                 <img

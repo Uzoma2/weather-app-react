@@ -115,7 +115,9 @@ body {
 
   justify-content: space-between;
 }
-
+.temp-today {
+  text-align: left;
+}
 .current-city {
   text-transform: capitalize;
   color: var(--darker-grey);
