@@ -1,5 +1,7 @@
 import React from "react";
 import SmartDate from "./smartDate.js";
+import WeatherIcon from "./WeatherIcon.js";
+import "./Styles.css";
 
 export default function WeatherInfo(props) {
   return (
@@ -12,11 +14,12 @@ export default function WeatherInfo(props) {
           </h3>
           <h3 className="weather-description">{props.data.description}</h3>
           <div className="weather-icon-link-wrap">
-            <img
-              src={props.data.icon}
-              alt={props.data.description}
-              className="weather-icon"
-            />
+            <div className="weather-icon">
+              <WeatherIcon
+                code={props.data.icon}
+                alt={props.data.description}
+              />
+            </div>
             <h2>
               <span className="current-temp-number">
                 {Math.round(props.data.temperature)}

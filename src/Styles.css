@@ -144,6 +144,7 @@ body {
   height: 70px;
   width: 100px;
   object-fit: contain;
+  display: inline-flex;
 }
 .weather-icon-link-wrap h2 {
   transform: translateX(-16px);
