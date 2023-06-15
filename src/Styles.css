@@ -194,6 +194,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   color: rgb(39, 35, 35, 0.7);
+  padding-left: 5px;
 }
 .forecast-icon {
   height: 70px;
