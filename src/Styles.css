@@ -199,6 +199,8 @@ body {
   height: 70px;
   width: 100px;
   object-fit: contain;
+  display: inline-flex;
+  justify-content: center;
 }
 /*FOOTER*/
 
