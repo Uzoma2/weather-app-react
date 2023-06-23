@@ -48,24 +48,10 @@ body {
   box-shadow: 10px 5px 15px rgb(168, 164, 164);
 }
 /*HEADER*/
-
-.city-suggestions {
-  margin-bottom: 20px;
-
-  display: flex;
-
-  column-gap: 10px;
+.header {
+  margin-top: 30px;
 }
 
-.city-suggestions a {
-  color: var(--accent);
-  transition: all 0.2s;
-}
-
-.city-suggestions a:hover {
-  color: #dbb132;
-  transform: scale(1.05);
-}
 .search-current-wrap {
   display: flex;
   justify-content: space-between;
@@ -74,7 +60,7 @@ body {
 }
 
 .search-form {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -125,7 +111,7 @@ body {
 .current-day-time {
   margin-bottom: 0;
   color: var(--grey);
-  font-weight: 400;
+  font-weight: 500;
 }
 .weather-description {
   text-transform: capitalize;
@@ -150,15 +136,15 @@ body {
   transform: translateX(-16px);
 }
 .current-temp-number {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--darker-grey);
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .units {
-  font-size: 23px;
+  font-size: 20px;
   position: relative;
-  top: -10px;
+  top: -16px;
   color: var(--grey);
 }
 
@@ -176,7 +162,7 @@ body {
 .forecast {
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .forecast .day {
   text-align: center;

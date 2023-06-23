@@ -39,13 +39,6 @@ export default function Weather(props) {
     return (
       <div className="wrap">
         <header className="header">
-          <section className="city-suggestions">
-            <a href="/">Jos</a>
-            <a href="/">Quebec</a>
-            <a href="/">Cairo</a>
-            <a href="/">Accra</a>
-            <a href="/">Lisbon</a>
-          </section>
           <div className="search-current-wrap">
             <form onSubmit={handleSearch} className="search-form">
               <input
@@ -58,10 +51,6 @@ export default function Weather(props) {
 
               <input type="submit" className="btn-warning" value="Search" />
             </form>
-
-            <div className="current-btn">
-              <input type="submit" className="btn-warning" value="Current" />
-            </div>
           </div>
         </header>
 
